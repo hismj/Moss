@@ -34,18 +34,24 @@ setup.bat
 ```
 3. 运行
 
-在本地或服务器上运行
+在本地或服务器上运行启动
 ```
 run.bat 127.0.0.1:8000
 ```
-在浏览器
+在浏览器上进入
+```
+127.0.0.1:8000
+```
+4. AI分析
 
+5. 动态分析
+6. 简单静态分析
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE4NDk4Mzg4LDE3MTUzMTgxMDQsMTAwOD
-UyNzQ4MCwtMTIxODE4MTMxMCwzMzA0MzIwNDZdfQ==
+eyJoaXN0b3J5IjpbLTEwNTE5MDc4MTEsMTcxNTMxODEwNCwxMD
+A4NTI3NDgwLC0xMjE4MTgxMzEwLDMzMDQzMjA0Nl19
 -->
