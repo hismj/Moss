@@ -42,14 +42,23 @@ run.bat 127.0.0.1:8000
 ```
 127.0.0.1:8000
 ```
-4. d
+4. 登录注册
+
+管理员账户
+用户名moss
+密码moss
+点击注册可以创建新账户
+输入相关信息即可
+
 5. AI分析
 
-初始登录
-用户名moss密码moss为管理员账户
+点击y
+
 
 
 6. 动态分析
+
+
 7. 简单静态分析
 
 
@@ -57,7 +66,7 @@ run.bat 127.0.0.1:8000
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NzczNDc5NSwtNjAxNDc4MjQ2LDE3MT
+eyJoaXN0b3J5IjpbLTM1MzUzMDIwNSwtNjAxNDc4MjQ2LDE3MT
 UzMTgxMDQsMTAwODUyNzQ4MCwtMTIxODE4MTMxMCwzMzA0MzIw
 NDZdfQ==
 -->
