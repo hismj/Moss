@@ -1,0 +1,85 @@
+{% extends "base/base_layout.html" %}
+{% load static %}
+{% block sidebar_option %}
+sidebar-collapse
+{% endblock %}
+{% block content %}
+<div class="content-wrapper">
+   <div class="content-header">
+   </div>
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-lg-12">
+            <div class="card">
+               <div class="card-body">
+                  <div class="h-100 d-flex align-items-center justify-content-center">
+                     <div class="login-box">
+                        <div class="login-logo">
+                           <a href="">涉诈APP智能分析系统</a>
+                        </div>
+                        <div class="card">
+                           <div class="card-body login-card-body">
+                              <h1 class="display-2 h-100 d-flex align-items-center justify-content-center">
+                                 <strong>MOSS</strong>
+                              </h1>
+                              {% if allow_pwd %}
+                              <form method="post" action="{% url 'login' %}?next={{next}}">
+                                 {% csrf_token %}
+                                 {{ form.non_field_errors }}
+                                 <div class="input-group mb-3">
+                                    <input type="username" name="username" class="form-control" placeholder="用户名">
+                                    <div class="input-group-append">
+                                       <div class="input-group-text">
+                                          <span class="fas fa-user"></span>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 {% for err in form.username.errors %}
+                                 <small> {{ err }} </small><br>
+                                 {% endfor %}
+                                 <div class="input-group mb-3">
+                                    <input type="password" name="password" class="form-control" placeholder="密码">
+                                    <div class="input-group-append">
+                                       <div class="input-group-text">
+                                          <span class="fas fa-lock"></span>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 {% for err in form.password.errors %}
+                                 <small> {{ err }} </small><br>
+                                 {% endfor %}
+                                 <div class="row">
+                                    <!-- <div class="col-8">
+                                       <div class="icheck-primary">
+                                       <input type="checkbox" id="remember">
+                                       <label for="remember">
+                                       Remember Me
+                                       </label>
+                                       </div>
+                                       </div> -->
+                                 </div>
+                                 <div class="col-12">
+                                     <button type="submit" class="btn btn-primary btn-block" style="background-color:#c2beb6 ; color: #585252;border-color: #c2beb6">登录</button>
+                                 </div>
+                                  <p>还没有创建用户？ <a href="{% url 'register' %}">点击这里注册</a></p>
+                              </form>
+                              {% endif %}
+                              {% if sso %}
+                              <hr>
+                              <p>
+                              <div class="col-12">
+                                 <a href="{% url 'saml_login' %}?next={{next}}" class="btn btn-primary btn-block">通过SSO登录</a>
+                              </div>
+                              </p>
+                              {% endif %}
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+{% endblock %}

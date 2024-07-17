@@ -1,0 +1,28 @@
+{% extends "base/base_layout.html" %}
+{% block sidebar_option %}
+      sidebar-collapse
+{% endblock %}
+{% block content %}
+<div class="content-wrapper">
+  <div class="content-header">
+  </div>
+   <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+            <div class="card">
+              <div class="card-body">
+                  <h1>压缩源代码说明</h1>
+                      <p class="lead">Moss系统支持Android（Eclipse和Android Studio）项目文件。</p>  
+                      <p>
+                        <strong>Eclipse项目：</strong> 对于Eclipse项目，压缩源文件的根目录中必须包含AndroidManifest.xml文件和'src'目录。
+                      </p>
+                      <p>
+                        <strong>Android Studio项目：</strong> 对于Android Studio项目，AndroidManifest.xml文件必须位于'app/src/main/AndroidManifest.xml'，且'app/src/main/java/'目录必须存在。
+                      </p>
+          </div>
+        </div>
+       </div>
+     </div>
+    </div>
+</div>
+{% endblock %}

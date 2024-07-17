@@ -1,0 +1,351 @@
+{% load static %}
+<!DOCTYPE html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Mobile Scam Surveillance（Moss）是一款专注于移动应用反诈骗的先进系统，利用静态和动态APK分析技术，并结合先进的人工智能（AI）算法，全面识别和防范恶意应用。通过深度学习和神经网络，Moss能够实时分析应用的权限、行为模式和网络交互，快速发现并拦截潜在的欺诈行为，保护用户免受安全威胁。">
+      <meta name="author" content="孟琦 宋明键 魏睿泽">
+      <link rel="icon" href="{% static "img/favicon.ico" %}">
+      <title>Moss涉诈APP智能分析识别平台</title>
+      <link rel="stylesheet" href="{% static "adminlte/dashboard/css/adminlte.min.css" %}">
+      <link rel="stylesheet" href="{% static "adminlte/plugins/fontawesome-free/css/all.min.css" %}">
+      <link rel="stylesheet" href="{% static "others/css/spinner.css" %}">
+      <link rel="stylesheet" href="{% static "landing/css/home.css" %}">
+      <!-- Google Font: Source Sans Pro -->
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+      <style>
+        body {
+            background-color: white;
+            text-align: center; /* 文字居中 */
+        }
+        .center-block {
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            height: 80vh; /* 设置高度，可以根据需要调整 */
+            margin-top: 20px; /* 可以调整上移的距离 */
+        }
+        .center-block img {
+            max-height: 65%; /* 图片最大高度为容器高度 */
+            max-width: 65%; /* 图片最大宽度为容器宽度 */
+            height: auto;
+            width: auto;
+            margin-top: 30px; /* 可以调整上移的距离 */
+        }
+      </style>
+    </head>
+   <body>
+
+    <div class="d-flex h-100 p-3 mx-auto flex-column">  
+        <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="{% url 'recent' %}" style="color: rgba(88,82,82,0.77);">最近检测</a>
+            <a class="nav-link" href="{% url 'dynamic' %}" style="color: rgba(88,82,82,0.77);">动态分析</a>
+            <a class="nav-link" href="{% url 'static_ai' %}" style="color: rgba(88,82,82,0.77);">AI分析</a>
+            <a class="nav-link" href="{% url 'about' %}" style="color: rgba(88,82,82,0.77);">关于</a>
+            {% if user.is_authenticated %}
+            <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle" style="color: #585252;"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+            <a class="nav-link" style="color: #585252;"></a>
+            <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow " style="left: 0px; right: auto;">
+                <li><a href="#" class="dropdown-item"> <small>{{ request.user.username }} <span class="badge badge-primary"> {% if user.is_staff %} Admin {% else %}{{ request.user.groups.all.0 }} {% endif %}</span></small></a></li>
+                <li class="dropdown-divider"></li>
+                <li><a href="{% url 'change_password' %}" class="dropdown-item"><i class="fa fa-asterisk" aria-hidden="true"></i> 修改密码 </a></li>
+                {% if user.is_staff %}<li><a href="{% url 'users' %}" class="dropdown-item"><i class="fa fa-users" aria-hidden="true"></i> 用户管理 </a></li>{% endif %}
+                <li><a href="{% url 'logout' %}" class="dropdown-item"><i class="fa fa-power-off" aria-hidden="true"></i> 登出 </a></li>
+            </ul>
+            {% endif %}
+        </nav>
+    
+        <header class="masthead mb-auto">
+            <div class="inner">
+            </div>
+        </header>
+        <div class="center-block">
+            <img src="{% static "img/moss_logo.png" %}" alt="moss Logo"/>
+        </div>
+        <main role="main" class="inner cover">
+            <div class="inner cover">
+                <div style="visibility:hidden; opacity:0" id="drop">
+                <div id="textnode">可以任意拖拽!</div>
+                </div>
+                </br>
+                <form id="upload_form" enctype="multipart/form-data" method="post">
+                {% csrf_token %}
+                <div class="fileUpload btn btn-lg btn-secondary" id="but"style="border-color: #484844;padding: 5px 10px; font-size: 14px;">
+                    <input type="file" name="file" id="uploadFile" placeholder="选择文件" multiple>
+                    <span class="fas fa-cloud-upload-alt"></span>
+                    上传 &amp; 静态分析
+                </div>
+                <br />
+                <small><i style="color: #262525;">你可以拖放到任何地方!</i></small>
+                <p></p>
+                <h5 class="lead" id="status"></h5>
+                <progress id="progressBar" value="0" max="100" style="width:300px;visibility:hidden;" ></progress>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <!--Loading Ring-->
+    <div class="hidden loading">
+        <div class='uil-ring-css' style='transform:scale(0.79);'>
+          <div></div>
+        </div>
+    </div>
+
+    <script src="{% static "adminlte/plugins/jquery.min.js" %}"></script>
+    <script src="{% static "adminlte/plugins/bootstrap/bootstrap.bundle.min.js" %}"></script>
+      <script>
+            let warning = "这是一个Moss测试用例. 任何上传的文件都将公开. 你要继续吗?";
+            // Result View
+            function load_result(url){
+                hide_loader();
+                var xhr = new XMLHttpRequest()
+                xhr.open('GET', url, true)
+                xhr.addEventListener("loadstart", function(evt){
+                    var x = document.getElementById("snackbar");
+                    x.className = "show";
+                    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 10000);
+                })
+                xhr.addEventListener("load", function (evt) {
+                    window.location.href = window.location.href + url;
+                }, false);
+                xhr.send();
+            }
+
+            //Download and scan APK
+            $('#package').keypress(function(event){
+                var keycode = (event.keyCode ? event.keyCode : event.which);
+                if(keycode == '13'){
+                    _("status").innerText = '尝试下载中 ...';
+                    show_loader();
+                    $.ajax({
+                        url : '{% url "download_scan" %}', 
+                        type : "POST",
+                        dataType: "json", 
+                        data : {
+                            package: $('#package').val(),
+                            csrfmiddlewaretoken: '{{ csrf_token }}',
+                        },
+                        success : function(json){
+                            if (json.status === 'ok'){
+                                i = 1;
+                                setInterval(function() {
+                                    dot = '';
+                                    for (x = 1; x <= i; x++) {
+                                        dot += '.';
+                                    }
+                                    _("status").innerText = "分析中" + dot;
+                                    i += 1;
+                                    if (i == 5) {
+                                        i = 1;
+                                    }
+                                }, 2000);
+
+                                url = json.analyzer + '/' + json.hash + '/';
+                                load_result(url);
+                            } else {
+                                hide_loader();
+                                _("status").innerText = json.description;
+                            }
+                        },
+                        error : function(xhr, ajaxOptions, thrownError) {
+                            hide_loader();
+                            if (thrownError === 'Forbidden'){
+                                _("status").innerText = "你没有权限下载该检测结果!";
+                                _('status').style.color = "#504e4e"; // 文本颜色
+                            }
+                        }
+                    });
+                }
+            });
+            function show_loader(){
+                var loadingOverlay = document.querySelector('.loading');
+                loadingOverlay.classList.remove('hidden');
+            }
+
+            function hide_loader(){
+                var loadingOverlay = document.querySelector('.loading');
+                loadingOverlay.classList.add('hidden');
+            }
+            // Existing
+            function _(el){
+                return document.getElementById(el);
+            }
+            // Response Handler     
+            function responseHandler(json, isbutton) {
+                if (json.status === 'error') {
+                    _("status").innerText = json.description;
+                } else {
+                    i = 1;
+                    setInterval(function() {
+                        dot = '';
+                        for (x = 1; x <= i; x++) {
+                            dot += '.';
+                        }
+                        _("status").innerText = "Analyzing" + dot;
+                        i += 1;
+                        if (i == 5) {
+                            i = 1;
+                        }
+                    }, 2000);
+                    var url = json.analyzer + '/' + json.hash + '/';
+                    load_result(url);
+                }
+            }
+            function progressHandler(event) {
+                var percent = (event.loaded / event.total) * 100;
+                console.log("Uploaded..." + Math.round(percent));
+                _("progressBar").value = Math.round(percent);
+                _("status").innerText = Math.round(percent) + "% 上传中...";
+            }
+            function completeHandler(event) {
+                if(event.currentTarget.status === 403){
+                    _("status").innerText = "你没有上传的权限！";
+                    _('status').style.color = "#504e4e"; // 文本颜色
+                    return;
+                } else {
+                    var json = JSON.parse(event.target.responseText);
+                    responseHandler(json);
+                }
+            }
+            function errorHandler(event) {
+                _("status").innerText = "上传失败!";
+                _('status').style.color = "#504e4e"; // 文本颜色
+            }
+            function abortHandler(event) {
+                _("status").innerText = "上传中止!";
+                _('status').style.color = "#504e4e"; // 文本颜色
+            }
+          // Is valid file extensions
+          function isValidExt(file_name){
+                var val = file_name.toLowerCase();
+                var regex = new RegExp("^(.{1,300}?)\.({{exts}})$");
+                val = val.replace(/^.*[\\\/]/, '');
+                if (!(regex.test(val))) {
+                    _('status').innerText = "Moss系统只支持APK, APKS, XAPK, AAB, JAR, AAR, SO, IPA, DYLIB, A, ZIP, 和APPX格式的文件." +
+                        "\n请刷新后重试";
+                    _('status').style.color = "#504e4e"; // 文本颜色
+                    _('status').style.fontSize = "16px"
+                    return false;
+                }
+                return true;
+          }
+          // Is allowed mimetype
+          function isValidMime(file_mime){
+                if (file_mime.length < 1)
+                    // bypass if mime is not available
+                    return true; 
+                var supported = [{% for mime in mimes %}'{{mime}}',{% endfor %}];
+                if(supported.indexOf(file_mime) >-1)
+                    return true;
+                 _('status').innerText = "系统不支持 (" + file_mime + ") 该媒体类型!";
+                 _('status').style.color = "#504e4e"; // 文本颜色
+                return false;
+          }
+         // File Upload
+         function uploadFile(file, i) {
+           try {
+                if (!isValidExt(file.name) || !isValidMime(file.type)){
+                    return;
+                }
+                _("progressBar").style.visibility = "visible";
+                var url = '{% url "upload" %}'
+                var xhr = new XMLHttpRequest()
+                xhr.open('POST', url, true)
+                xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
+                xhr.setRequestHeader("X-CSRFToken", '{{ csrf_token }}');
+                xhr.upload.addEventListener("progress", progressHandler, false);
+                xhr.addEventListener("load", completeHandler, false);
+                xhr.addEventListener("error", errorHandler, false);
+                xhr.addEventListener("abort", abortHandler, false);
+                var formdata = new FormData();
+                formdata.append("file", file);
+                xhr.send(formdata)
+            } catch (e) {
+                alert("Error:" + e);
+            }
+           }
+         
+           function handleFiles(files) {
+               files = [...files]
+               files.forEach(uploadFile)
+           }
+         
+           // Full Screen Drag & Drop File Upload
+           var lastTarget = null;
+           function isFile(evt) {
+               var dt = evt.dataTransfer;
+         
+               for (var i = 0; i < dt.types.length; i++) {
+                   if (dt.types[i] === "Files") {
+                       return true;
+                   }
+               }
+               return false;
+           }
+         
+           window.addEventListener("dragenter", function (e) {
+               if (isFile(e)) {
+                   lastTarget = e.target;
+                   document.querySelector("#drop").style.visibility = "";
+                   document.querySelector("#drop").style.opacity = 1;
+                   document.querySelector("#textnode").style.fontSize = "48px";
+               }
+           });
+         
+           window.addEventListener("dragleave", function (e) {
+               e.preventDefault();
+               if (e.target === document || e.target === lastTarget) {
+                   document.querySelector("#drop").style.visibility = "hidden";
+                   document.querySelector("#drop").style.opacity = 0;
+                   document.querySelector("#textnode").style.fontSize = "42px";
+               }
+           });
+         
+           window.addEventListener("dragover", function (e) {
+               e.preventDefault();
+           });
+         
+           window.addEventListener("drop", function (e) {
+               e.preventDefault();
+               document.querySelector("#drop").style.visibility = "hidden";
+               document.querySelector("#drop").style.opacity = 0;
+               document.querySelector("#textnode").style.fontSize = "42px";
+               if(e.dataTransfer.files.length > 0) {
+                if (document.location.host === 'mobsf.live'){
+                    if (confirm(warning) == true) {
+                        handleFiles(e.dataTransfer.files);
+                    } else {
+                        return;
+                    }
+                } else {
+                    handleFiles(e.dataTransfer.files);
+                }
+               }
+           });
+
+            $(document).ready(function() {
+                // Button File Upload
+                $('input[type=file]').change(function() {
+                    _('status').innerText = "";
+                    if (_("uploadFile").files.length === 0) {
+                        return;
+                    }
+                    var files = _("uploadFile").files;
+                    if (document.location.host === 'mobsf.live'){
+                        if (confirm(warning) == true) {
+                            _("uploadFile").style.display = "none";
+                            handleFiles(files);
+                        } else {
+                            return;
+                        }
+                    } else {
+                        _("uploadFile").style.display = "none";
+                        handleFiles(files);
+                    }
+                });
+            });
+      </script>
+   </body>
+</html>
