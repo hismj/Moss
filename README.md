@@ -52,22 +52,26 @@ run.bat 127.0.0.1:8000
 
 **5. AI分析**
 
-点击home页面顶部菜单栏中的AI分析即可进入AI分析界面
-点击“选择APK文件”可以选择一个或多个文件上传（不选择会提示错误）
-点击“选择模型”可以选择目前我们已预训练好的两个模型（不选择会提示错误）
-在文本框中输入apk下载的url，点击“下载apk”可以从url中下载apk并直接上传
-点击“上传二维码图片”可以从二维码中提取url并下载apk上传
+- 点击home页面顶部菜单栏中的AI分析即可进入AI分析界面
+- 点击“选择APK文件”可以选择一个或多个文件上传（不选择会提示错误）
+- 点击“选择模型”可以选择目前我们已预训练好的两个模型（不选择会提示错误）
+- 在文本框中输入apk下载的url，点击“下载apk”可以从url中下载apk并直接上传
+- 点击“上传二维码图片”可以从二维码中提取url并下载apk上传
 
 **6. 简单静态分析**
 
+- 点击页面顶部菜单栏中的简单静态分析即可进入简单静态分析界面，也就是最初页面
+- 可以上传apk文件
+- 上传完毕会自动进入分析页面
+- 可以点击页面顶部菜单栏中的最近检测，查看之前分析过的文件
 
 **7. 动态分析**
 
-动态分析需要下载Genymotion或Android studio等模拟器，Genymotion或Android studio下载配置好，创建虚拟机后会自动连接到系统
-注意：请先启动模拟器再运行
-点击中心“安卓动态分析”按钮，连接模拟器，此时如果报错可能是模拟器未能正常建立连接，可能因网络代理问题，请检查。
+- 动态分析需要下载Genymotion或Android studio等模拟器，Genymotion或Android studio下载配置好，创建虚拟机后会自动连接到系统
+- 注意：请先启动模拟器再运行
+- 点击中心“安卓动态分析”按钮，连接模拟器，此时如果报错可能是模拟器未能正常建立连接，可能因网络代理问题，请检查。
 
-页面中出现简单静态分析扫描过的apk，可选择将其下载的mo'ni'qi
+页面中出现简单静态分析扫描过的apk，可选择将其下载的模拟器中运行，然后选择对何种行为进行动态分析
 
 
 
@@ -77,7 +81,7 @@ run.bat 127.0.0.1:8000
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg0Njg2NjU4LC0xNjgyOTk5NjMzLC02MD
-E0NzgyNDYsMTcxNTMxODEwNCwxMDA4NTI3NDgwLC0xMjE4MTgx
-MzEwLDMzMDQzMjA0Nl19
+eyJoaXN0b3J5IjpbLTg1NzUwMTU4MywtMTY4Mjk5OTYzMywtNj
+AxNDc4MjQ2LDE3MTUzMTgxMDQsMTAwODUyNzQ4MCwtMTIxODE4
+MTMxMCwzMzA0MzIwNDZdfQ==
 -->
