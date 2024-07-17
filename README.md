@@ -6,8 +6,6 @@ Moss涉诈APP智能分析识别系统是一个专注于Android移动应用安全
 
 Github链接：[hismj/Moss at master (github.com)](https://github.com/hismj/Moss/tree/master)
 
-[这里输入链接描述](https://github.com/hismj/Moss/tree/master)
-
  1. 安装环境依赖
 
  - 安装 Git（必要）
@@ -30,10 +28,17 @@ Github链接：[hismj/Moss at master (github.com)](https://github.com/hismj/Moss
 ```
 git clone https://github.com/hismj/Moss.git
 ```
-安装依赖
+安装并初始化
 ```
 setup.bat
 ```
+3. 运行
+
+在本地或服务器上运行
+```
+run.bat 127.0.0.1:8000
+```
+在浏览器
 
 
 
@@ -41,6 +46,6 @@ setup.bat
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc4MzQ3Nzc0LDE3MTUzMTgxMDQsMTAwOD
+eyJoaXN0b3J5IjpbMjE4NDk4Mzg4LDE3MTUzMTgxMDQsMTAwOD
 UyNzQ4MCwtMTIxODE4MTMxMCwzMzA0MzIwNDZdfQ==
 -->
