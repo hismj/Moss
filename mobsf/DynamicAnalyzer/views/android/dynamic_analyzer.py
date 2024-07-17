@@ -104,7 +104,7 @@ def android_dynamic_analysis(request, api=False):
                    'proxy_port': settings.PROXY_PORT,
                    'settings_loc': get_config_loc(),
                    'device_packages': device_packages,
-                   'title': 'MobSF Dynamic Analysis',
+                   'title': '动态分析',
                    'version': settings.MOBSF_VER}
         if api:
             return context
@@ -220,7 +220,7 @@ def dynamic_analyzer(request, checksum, api=False):
                    'version': settings.MOBSF_VER,
                    'activities': activities,
                    'exported_activities': exported_activities,
-                   'title': 'Dynamic Analyzer'}
+                   'title': '动态分析'}
         template = 'dynamic_analysis/android/dynamic_analyzer.html'
         if api:
             return context

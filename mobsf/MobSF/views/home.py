@@ -201,7 +201,7 @@ def api_docs(request):
 def about(request):
     """About Route."""
     context = {
-        'title': 'About',
+        'title': '关于',
         'version': settings.MOBSF_VER,
     }
     template = 'general/about.html'
@@ -221,7 +221,7 @@ def donate(request):
 def error(request):
     """Error Route."""
     context = {
-        'title': 'Error',
+        'title': '出错',
         'version': settings.MOBSF_VER,
     }
     template = 'general/error.html'
@@ -231,7 +231,7 @@ def error(request):
 def zip_format(request):
     """Zip Format Message Route."""
     context = {
-        'title': 'Zipped Source Instruction',
+        'title': '压缩源代码说明',
         'version': settings.MOBSF_VER,
     }
     template = 'general/zip.html'
@@ -241,7 +241,7 @@ def zip_format(request):
 def not_found(request, *args):
     """Not Found Route."""
     context = {
-        'title': 'Not Found',
+        'title': '未找到页面',
         'version': settings.MOBSF_VER,
     }
     template = 'general/not_found.html'
@@ -252,7 +252,7 @@ def not_found(request, *args):
 def dynamic_analysis(request):
     """Dynamic Analysis Landing."""
     context = {
-        'title': 'Dynamic Analysis',
+        'title': '动态分析',
         'version': settings.MOBSF_VER,
     }
     template = 'general/dynamic.html'
@@ -300,7 +300,7 @@ def recent_scans(request, page_size=10, page_number=1):
         entry['DYNAMIC_REPORT_EXISTS'] = report_file.exists()
         entries.append(entry)
     context = {
-        'title': 'Recent Scans',
+        'title': '最近浏览',
         'entries': entries,
         'version': settings.MOBSF_VER,
         'page_obj': page_obj,
@@ -317,7 +317,7 @@ def download_apk(request):
     # Package validated in apk_download()
     context = {
         'status': 'failed',
-        'description': 'Unable to download APK',
+        'description': '下载失败',
     }
     res = apk_download(package)
     if res:
