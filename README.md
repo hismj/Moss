@@ -6,10 +6,12 @@
  - keras==2.15.0
  - tensorflow==2.15.0
  - pyzbar
+ - torch
+ - 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MTU5NTQ1MiwzMzA0MzIwNDZdfQ==
+eyJoaXN0b3J5IjpbLTEyMTgxODEzMTAsMzMwNDMyMDQ2XX0=
 -->
