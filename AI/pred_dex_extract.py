@@ -109,6 +109,7 @@ def process_single_apk(apk_path):
     extract_to = 'dex'
     width, height = 224, 224
     save_dir = 'img_2_pred'
+    subdir = ''
 
     print('Processing ' + apk_path)
     try:
