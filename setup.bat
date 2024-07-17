@@ -64,8 +64,8 @@ where python >nul 2>&1 && (
   call scripts/clean.bat y
 
   echo [INSTALL] Migrating Database
-  set DJANGO_SUPERUSER_USERNAME=mobsf
-  set DJANGO_SUPERUSER_PASSWORD=mobsf
+  set DJANGO_SUPERUSER_USERNAME=moss
+  set DJANGO_SUPERUSER_PASSWORD=moss
   poetry run python manage.py makemigrations
   poetry run python manage.py makemigrations StaticAnalyzer
   poetry run python manage.py migrate
