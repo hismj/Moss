@@ -52,7 +52,10 @@ run.bat 127.0.0.1:8000
 
 5. AI分析
 
-点击y
+点击home页面顶部菜单栏中的AI分析即可进入AI分析界面
+点击选择APK文件可以选择一个或多个文件上传（不选择会提示错误）
+点击选择模型可以选择目前我们已预训练好的两个模型（不选择会提示错误）
+
 
 
 
@@ -66,7 +69,7 @@ run.bat 127.0.0.1:8000
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MzUzMDIwNSwtNjAxNDc4MjQ2LDE3MT
+eyJoaXN0b3J5IjpbMTc0NDI2Nzg5MCwtNjAxNDc4MjQ2LDE3MT
 UzMTgxMDQsMTAwODUyNzQ4MCwtMTIxODE4MTMxMCwzMzA0MzIw
 NDZdfQ==
 -->
