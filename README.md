@@ -7,11 +7,14 @@
  - tensorflow==2.15.0
  - pyzbar
  - torch
+ - androguard==4.1.2
+ - 
  - 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTgxODEzMTAsMzMwNDMyMDQ2XX0=
+eyJoaXN0b3J5IjpbMTAwODUyNzQ4MCwtMTIxODE4MTMxMCwzMz
+A0MzIwNDZdfQ==
 -->
