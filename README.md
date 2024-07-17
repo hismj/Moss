@@ -44,14 +44,18 @@ run.bat 127.0.0.1:8000
 ```
 4. AI分析
 
-5. 动态分析
-6. 简单静态分析
+初始登录
+用户名moss密码moss为管理员账户
+
+
+6. 动态分析
+7. 简单静态分析
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTE5MDc4MTEsMTcxNTMxODEwNCwxMD
-A4NTI3NDgwLC0xMjE4MTgxMzEwLDMzMDQzMjA0Nl19
+eyJoaXN0b3J5IjpbLTYwMTQ3ODI0NiwxNzE1MzE4MTA0LDEwMD
+g1Mjc0ODAsLTEyMTgxODEzMTAsMzMwNDMyMDQ2XX0=
 -->
