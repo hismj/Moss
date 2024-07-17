@@ -42,7 +42,8 @@ run.bat 127.0.0.1:8000
 ```
 127.0.0.1:8000
 ```
-4. AI分析
+4. d
+5. AI分析
 
 初始登录
 用户名moss密码moss为管理员账户
@@ -56,6 +57,7 @@ run.bat 127.0.0.1:8000
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMTQ3ODI0NiwxNzE1MzE4MTA0LDEwMD
-g1Mjc0ODAsLTEyMTgxODEzMTAsMzMwNDMyMDQ2XX0=
+eyJoaXN0b3J5IjpbMTM4NzczNDc5NSwtNjAxNDc4MjQ2LDE3MT
+UzMTgxMDQsMTAwODUyNzQ4MCwtMTIxODE4MTMxMCwzMzA0MzIw
+NDZdfQ==
 -->
