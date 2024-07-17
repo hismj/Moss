@@ -8,12 +8,12 @@
  - pyzbar
  - torch
  - androguard==4.1.2
- - 
+详细其他包见requirements.txt
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMzM4OTMzMywxMDA4NTI3NDgwLC0xMj
+eyJoaXN0b3J5IjpbMTcxNTMxODEwNCwxMDA4NTI3NDgwLC0xMj
 E4MTgxMzEwLDMzMDQzMjA0Nl19
 -->
