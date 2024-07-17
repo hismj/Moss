@@ -58,21 +58,24 @@ run.bat 127.0.0.1:8000
 在文本框中输入apk下载的url，点击“下载apk”可以从url中下载apk并直接上传
 点击“上传二维码图片”可以从二维码中提取url并下载apk上传
 
+**6. 简单静态分析**
 
 
-**6. 动态分析**
+**7. 动态分析**
 
 动态分析需要下载Genymotion或Android studio等模拟器，Genymotion或Android studio下载配置好，创建虚拟机后会自动连接到系统
 注意：请先启动模拟器再运行
+点击中心“安卓动态分析”按钮，开始链接f
 
-**7. 简单静态分析**
+
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODI5OTk2MzMsLTYwMTQ3ODI0NiwxNz
-E1MzE4MTA0LDEwMDg1Mjc0ODAsLTEyMTgxODEzMTAsMzMwNDMy
-MDQ2XX0=
+eyJoaXN0b3J5IjpbLTU3NDU3NjU0MCwtMTY4Mjk5OTYzMywtNj
+AxNDc4MjQ2LDE3MTUzMTgxMDQsMTAwODUyNzQ4MCwtMTIxODE4
+MTMxMCwzMzA0MzIwNDZdfQ==
 -->
