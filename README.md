@@ -12,13 +12,13 @@ Moss涉诈APP智能分析识别系统是一个专注于Android移动应用安全
 
 
 
- - 安装 Git（示例版本 Git 2.35.1）
- - 这里是列表文本
- - 安装 Python 3.8-3.9（示例版本 Python 3.8.10）
- - 安装 JDK 8+（示例版本 JDK 1.8.0_172）
- - 安装 Microsoft Visual C++ Build Tools
+ - 安装 Git（必要）
+ - 安装 Python 3.10+（必要）
+ - 安装 JDK 8+（必要）
+ - 安装 Microsoft Visual C++ Build Tools（必要）
  - 安装 OpenSSL（non-light）（必要）
  - 安装 wkhtmltopdf，并将包含 wkhtmltopdf 的二进制文件路径添加到环境变量 PATH 里（非必要）
+ - 
 
 ```
 git clone https://github.com/hismj/Moss.git
@@ -40,6 +40,6 @@ setup.bat
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MTQ2MzkyNywxNzE1MzE4MTA0LDEwMD
-g1Mjc0ODAsLTEyMTgxODEzMTAsMzMwNDMyMDQ2XX0=
+eyJoaXN0b3J5IjpbOTg0MDAzOTU2LDE3MTUzMTgxMDQsMTAwOD
+UyNzQ4MCwtMTIxODE4MTMxMCwzMzA0MzIwNDZdfQ==
 -->
