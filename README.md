@@ -54,8 +54,8 @@ run.bat 127.0.0.1:8000
 
 点击home页面顶部菜单栏中的AI分析即可进入AI分析界面
 点击选择APK文件可以选择一个或多个文件上传（不选择会提示错误）
-点击选择模型可以选择目前我们已预训练好的两个模型（不选择会提示错误）
-
+点击选择模型”可以选择目前我们已预训练好的两个模型（不选择会提示错误）
+在文本框中输入apk下载的url，点击“下载apk”可以从url中下载apk并直接上传
 
 
 
@@ -69,7 +69,7 @@ run.bat 127.0.0.1:8000
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NDI2Nzg5MCwtNjAxNDc4MjQ2LDE3MT
-UzMTgxMDQsMTAwODUyNzQ4MCwtMTIxODE4MTMxMCwzMzA0MzIw
-NDZdfQ==
+eyJoaXN0b3J5IjpbLTIwODI4NzE5MzIsLTYwMTQ3ODI0NiwxNz
+E1MzE4MTA0LDEwMDg1Mjc0ODAsLTEyMTgxODEzMTAsMzMwNDMy
+MDQ2XX0=
 -->
