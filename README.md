@@ -62,7 +62,9 @@ run.bat 127.0.0.1:8000
 
 **6. 动态分析**
 
-动态分析需要下载Genymotion或Android studio等模拟器，
+动态分析需要下载Genymotion或Android studio等模拟器，Genymotion或Android studio下载配置好，创建虚拟机后会自动连接到系统
+注意：请先启动模拟器再运行
+
 **7. 简单静态分析**
 
 
@@ -70,7 +72,7 @@ run.bat 127.0.0.1:8000
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTc2MDc4MDgsLTYwMTQ3ODI0NiwxNz
+eyJoaXN0b3J5IjpbLTE2ODI5OTk2MzMsLTYwMTQ3ODI0NiwxNz
 E1MzE4MTA0LDEwMDg1Mjc0ODAsLTEyMTgxODEzMTAsMzMwNDMy
 MDQ2XX0=
 -->
