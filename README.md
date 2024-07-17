@@ -3,13 +3,13 @@
 作者Author：宋明键、孟琦
 ![Moss Logo](/imgs/2024-07-17/EOc6jTB4HqtAE68E.png)
 
-python==3.10
-keras==2.15.0
-tensorflow==2.15.0
-pyzbar
+ - python==3.10
+ - keras==2.15.0
+ - tensorflow==2.15.0
+ - pyzbar
 
 
-> Written with [StackEdit中文版](https://stackedit.cn/).
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNzg0NTYzNF19
+eyJoaXN0b3J5IjpbMTA1ODAxNTE4NV19
 -->
