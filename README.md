@@ -51,6 +51,8 @@ run.bat 127.0.0.1:8000
 ```
 - 点击注册可以创建新账户，输入相关信息即可
 ![登录页面](https://raw.githubusercontent.com/hismj/Moss/master/docs_Images/loginscreen.png)
+- 登录后自动跳转至主页
+![主页](https://raw.githubusercontent.com/hismj/Moss/master/docs_Images/homescreen.png)
 
 **5. AI识别**
 
@@ -109,9 +111,9 @@ $ emulator -avd <your_avd_name> -writable-system -no-snapshot
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMjY0MzUxMCwxNDIxMjU0OTYzLC00Nj
-cyMzIyNSwxOTI0MjcyNjUxLC0xOTMzNjUxOTg1LC0xMDE0MTkx
-NjU2LDE5OTM4NzMxODEsLTg1NzUwMTU4MywtMTY4Mjk5OTYzMy
-wtNjAxNDc4MjQ2LDE3MTUzMTgxMDQsMTAwODUyNzQ4MCwtMTIx
-ODE4MTMxMCwzMzA0MzIwNDZdfQ==
+eyJoaXN0b3J5IjpbMTExODUzMjI1NiwxMzIyNjQzNTEwLDE0Mj
+EyNTQ5NjMsLTQ2NzIzMjI1LDE5MjQyNzI2NTEsLTE5MzM2NTE5
+ODUsLTEwMTQxOTE2NTYsMTk5Mzg3MzE4MSwtODU3NTAxNTgzLC
+0xNjgyOTk5NjMzLC02MDE0NzgyNDYsMTcxNTMxODEwNCwxMDA4
+NTI3NDgwLC0xMjE4MTgxMzEwLDMzMDQzMjA0Nl19
 -->
