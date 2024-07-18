@@ -101,7 +101,12 @@ $ emulator -list-avds
 $ emulator -avd <your_avd_name> -writable-system -no-snapshot
 ```
 将<your_avd_name>替换为4.步列出的可用的 Android 虚拟设备 （AVD）名称
-- 若可以连接AVD，但无法进入具体app动态分析页面，尝试
+- 若可以连接AVD，但无法进入具体APP动态分析页面，报错无法进入root，尝试重启ADB
+```
+adb root
+adb kill-server
+adb start-server
+```
 - 若无法联网，请尝试配置网络，参考[Android Studio模拟器无法连接网络_android studio模拟器无法联网-CSDN博客](https://blog.csdn.net/qq_51802315/article/details/124852026?ops_request_misc=&request_id=&biz_id=102&utm_term=Android%20StudioAVD%E6%A8%A1%E6%8B%9F%E5%99%A8%E9%85%8D%E7%BD%AE%E7%BD%91%E7%BB%9C&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-124852026.142^v100^pc_search_result_base4&spm=1018.2226.3001.4449)
 - 页面中出现简单静态分析扫描过的apk，可选择将其下载的模拟器中运行，然后选择对何种行为进行动态分析
 
@@ -113,7 +118,7 @@ $ emulator -avd <your_avd_name> -writable-system -no-snapshot
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMTE2MzY1OCwyNTk4OTI5MTIsMTExOD
+eyJoaXN0b3J5IjpbLTEwMTU3MDExOSwyNTk4OTI5MTIsMTExOD
 UzMjI1NiwxMzIyNjQzNTEwLDE0MjEyNTQ5NjMsLTQ2NzIzMjI1
 LDE5MjQyNzI2NTEsLTE5MzM2NTE5ODUsLTEwMTQxOTE2NTYsMT
 k5Mzg3MzE4MSwtODU3NTAxNTgzLC0xNjgyOTk5NjMzLC02MDE0
