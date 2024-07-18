@@ -66,13 +66,14 @@ run.bat 127.0.0.1:8000
 - 可以上传apk文件
 - 上传完毕会自动进入分析页面
 - 可以点击页面顶部菜单栏中的最近检测，查看之前分析过的文件
-
+![静态分析](https://raw.githubusercontent.com/hismj/Moss/master/docs_Images/staticscreen.png)
 
 **7. 动态分析**
 
 - 动态分析需要下载Genymotion或Android studio等模拟器，Genymotion或Android studio下载配置好，创建虚拟机后会自动连接到系统
 - 注意：请先启动模拟器再运行
 - 点击中心“安卓动态分析”按钮，连接模拟器，此时如果报错可能是模拟器未能正常建立连接。
+![动态分析](https://raw.githubusercontent.com/hismj/Moss/master/docs_Images/dynamicscreen.png)
 
 **注意：如果模拟器无法正常连接，请遵循以下步骤**
 1. 请下载  [Android Studio Emulator](https://developer.android.com/studio) 模拟器
@@ -106,9 +107,9 @@ $ emulator -avd <your_avd_name> -writable-system -no-snapshot
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAyNDgwNjU4LDE0MjEyNTQ5NjMsLTQ2Nz
-IzMjI1LDE5MjQyNzI2NTEsLTE5MzM2NTE5ODUsLTEwMTQxOTE2
-NTYsMTk5Mzg3MzE4MSwtODU3NTAxNTgzLC0xNjgyOTk5NjMzLC
-02MDE0NzgyNDYsMTcxNTMxODEwNCwxMDA4NTI3NDgwLC0xMjE4
-MTgxMzEwLDMzMDQzMjA0Nl19
+eyJoaXN0b3J5IjpbLTQ3NTY0ODgxNCwxNDIxMjU0OTYzLC00Nj
+cyMzIyNSwxOTI0MjcyNjUxLC0xOTMzNjUxOTg1LC0xMDE0MTkx
+NjU2LDE5OTM4NzMxODEsLTg1NzUwMTU4MywtMTY4Mjk5OTYzMy
+wtNjAxNDc4MjQ2LDE3MTUzMTgxMDQsMTAwODUyNzQ4MCwtMTIx
+ODE4MTMxMCwzMzA0MzIwNDZdfQ==
 -->
