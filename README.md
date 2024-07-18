@@ -13,7 +13,7 @@ Github链接：[hismj/Moss at master (github.com)](https://github.com/hismj/Moss
  - 安装 JDK 8+（必要）
  - 安装 Microsoft Visual C++ Build Tools（必要）
  - 安装 OpenSSL（non-light）（必要）
- - 安装Genymotion或Android studio（tui'jian）等模拟器，用于运行动态分析（必要）
+ - 安装Android studio（推荐）或Genymotion等模拟器，用于运行动态分析（必要）
  - 安装 wkhtmltopdf，并将包含 wkhtmltopdf 的二进制文件路径添加到环境变量 PATH 里（非必要）
  - keras==2.15.0
  - tensorflow==2.15.0
@@ -73,7 +73,7 @@ run.bat 127.0.0.1:8000
 
 **7. 动态分析**
 
-- 动态分析需要下载Genymotion或Android studio等模拟器，Genymotion或Android studio下载配置好，创建虚拟机后会自动连接到系统
+- 动态分析需要下载Android studio或Genymotion等模拟器，Android studio或Genymotion下载配置好，创建虚拟机后会自动连接到系统，
 - 注意：请先启动模拟器再运行
 - 点击中心“安卓动态分析”按钮，连接模拟器，此时如果报错可能是模拟器未能正常建立连接。
 ![动态分析](https://raw.githubusercontent.com/hismj/Moss/master/docs_Images/dynamicscreen.png)
@@ -111,10 +111,10 @@ $ emulator -avd <your_avd_name> -writable-system -no-snapshot
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU2NjQ2ODM4LDExMTg1MzIyNTYsMTMyMj
-Y0MzUxMCwxNDIxMjU0OTYzLC00NjcyMzIyNSwxOTI0MjcyNjUx
-LC0xOTMzNjUxOTg1LC0xMDE0MTkxNjU2LDE5OTM4NzMxODEsLT
-g1NzUwMTU4MywtMTY4Mjk5OTYzMywtNjAxNDc4MjQ2LDE3MTUz
-MTgxMDQsMTAwODUyNzQ4MCwtMTIxODE4MTMxMCwzMzA0MzIwND
-ZdfQ==
+eyJoaXN0b3J5IjpbLTE2MjgzNTEyMTEsMTExODUzMjI1NiwxMz
+IyNjQzNTEwLDE0MjEyNTQ5NjMsLTQ2NzIzMjI1LDE5MjQyNzI2
+NTEsLTE5MzM2NTE5ODUsLTEwMTQxOTE2NTYsMTk5Mzg3MzE4MS
+wtODU3NTAxNTgzLC0xNjgyOTk5NjMzLC02MDE0NzgyNDYsMTcx
+NTMxODEwNCwxMDA4NTI3NDgwLC0xMjE4MTgxMzEwLDMzMDQzMj
+A0Nl19
 -->
