@@ -74,6 +74,7 @@ run.bat 127.0.0.1:8000
 **注意：如果模拟器无法正常连接，请遵循以下步骤**
 1. 请下载  [Android Studio Emulator](https://developer.android.com/studio) 模拟器
 2. 创建**Android 9.0、API 28、非Google Play**的AVD
+3. 
 
 
 页面中出现简单静态分析扫描过的apk，可选择将其下载的模拟器中运行，然后选择对何种行为进行动态分析
@@ -86,8 +87,8 @@ run.bat 127.0.0.1:8000
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTQxOTE2NTYsMTk5Mzg3MzE4MSwtOD
-U3NTAxNTgzLC0xNjgyOTk5NjMzLC02MDE0NzgyNDYsMTcxNTMx
-ODEwNCwxMDA4NTI3NDgwLC0xMjE4MTgxMzEwLDMzMDQzMjA0Nl
-19
+eyJoaXN0b3J5IjpbLTE5MzM2NTE5ODUsLTEwMTQxOTE2NTYsMT
+k5Mzg3MzE4MSwtODU3NTAxNTgzLC0xNjgyOTk5NjMzLC02MDE0
+NzgyNDYsMTcxNTMxODEwNCwxMDA4NTI3NDgwLC0xMjE4MTgxMz
+EwLDMzMDQzMjA0Nl19
 -->
