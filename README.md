@@ -78,6 +78,7 @@ run.bat 127.0.0.1:8000
 **注意：如果模拟器无法正常连接，请遵循以下步骤**
 1. 请下载  [Android Studio Emulator](https://developer.android.com/studio) 模拟器
 2. 创建**Android 9.0、API 28、非Google Play**的AVD
+![AVDtips](https://raw.githubusercontent.com/hismj/Moss/master/docs_Images/AVDtips.png)
 3. **使用emulator从命令行运行 AVD**
 将 Android SDK 模拟器目录追加到环境变量`PATH`。
 一些示例位置：
@@ -107,9 +108,9 @@ $ emulator -avd <your_avd_name> -writable-system -no-snapshot
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NTY0ODgxNCwxNDIxMjU0OTYzLC00Nj
-cyMzIyNSwxOTI0MjcyNjUxLC0xOTMzNjUxOTg1LC0xMDE0MTkx
-NjU2LDE5OTM4NzMxODEsLTg1NzUwMTU4MywtMTY4Mjk5OTYzMy
-wtNjAxNDc4MjQ2LDE3MTUzMTgxMDQsMTAwODUyNzQ4MCwtMTIx
-ODE4MTMxMCwzMzA0MzIwNDZdfQ==
+eyJoaXN0b3J5IjpbLTIwNzIyNzAzNDQsMTQyMTI1NDk2MywtND
+Y3MjMyMjUsMTkyNDI3MjY1MSwtMTkzMzY1MTk4NSwtMTAxNDE5
+MTY1NiwxOTkzODczMTgxLC04NTc1MDE1ODMsLTE2ODI5OTk2Mz
+MsLTYwMTQ3ODI0NiwxNzE1MzE4MTA0LDEwMDg1Mjc0ODAsLTEy
+MTgxODEzMTAsMzMwNDMyMDQ2XX0=
 -->
