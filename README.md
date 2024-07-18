@@ -89,8 +89,7 @@ $ emulator -list-avds
 $ emulator -avd <your_avd_name> -writable-system -no-snapshot
 ```
 将<your_avd_name>替换为4.步列出的可用的 Android 虚拟设备 （AVD）名称
-6.若无法上网
-
+- 若无法联网，请尝试配置
 - 页面中出现简单静态分析扫描过的apk，可选择将其下载的模拟器中运行，然后选择对何种行为进行动态分析
 
 本项目参考MobSF移动安全测试框架：
@@ -101,7 +100,7 @@ $ emulator -avd <your_avd_name> -writable-system -no-snapshot
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MDMyMTQzMiwtMTkzMzY1MTk4NSwtMT
+eyJoaXN0b3J5IjpbMTkyNDI3MjY1MSwtMTkzMzY1MTk4NSwtMT
 AxNDE5MTY1NiwxOTkzODczMTgxLC04NTc1MDE1ODMsLTE2ODI5
 OTk2MzMsLTYwMTQ3ODI0NiwxNzE1MzE4MTA0LDEwMDg1Mjc0OD
 AsLTEyMTgxODEzMTAsMzMwNDMyMDQ2XX0=
