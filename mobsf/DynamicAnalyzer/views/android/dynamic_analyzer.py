@@ -71,8 +71,6 @@ def android_dynamic_analysis(request, api=False):
                 'APP_NAME': apk.APP_NAME,
                 'VERSION_NAME': apk.VERSION_NAME,
                 'FILE_NAME': apk.FILE_NAME,
-                'NAME': apk.NAME,
-                'PACKAGE': apk.PACKAGE,
                 'PACKAGE_NAME': apk.PACKAGE_NAME,
                 'DYNAMIC_REPORT_EXISTS': logcat.exists(),
             }
