@@ -80,9 +80,15 @@ run.bat 127.0.0.1:8000
 苹果电脑 `/Users/<user>/Library/Android/sdk/emulator`
 Linux `/home/<user>/Android/Sdk/emulator`
 Windows `C:\Users\<user>\AppData\Local\Android\Sdk\emulator`
-4. **列出可用的 Android 虚拟设备 （AVD）**
-
-
+4. **列出可用的 Android 虚拟设备 （AVD）名称**
+```
+$ emulator -list-avds
+```
+5. **运行 Android 虚拟设备 （AVD）**
+```
+$ emulator -avd <your_avd_name> -writable-system -no-snapshot
+```
+将<your_avd_name>替换为4.步列出的可用的 Android 虚拟设备 （AVD）名称
 页面中出现简单静态分析扫描过的apk，可选择将其下载的模拟器中运行，然后选择对何种行为进行动态分析
 
 本项目参考MobSF移动安全测试框架：
@@ -93,7 +99,7 @@ Windows `C:\Users\<user>\AppData\Local\Android\Sdk\emulator`
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM3MzE4MDA5LC0xOTMzNjUxOTg1LC0xMD
+eyJoaXN0b3J5IjpbMTE4ODM5NzkwLC0xOTMzNjUxOTg1LC0xMD
 E0MTkxNjU2LDE5OTM4NzMxODEsLTg1NzUwMTU4MywtMTY4Mjk5
 OTYzMywtNjAxNDc4MjQ2LDE3MTUzMTgxMDQsMTAwODUyNzQ4MC
 wtMTIxODE4MTMxMCwzMzA0MzIwNDZdfQ==
