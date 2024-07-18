@@ -69,7 +69,13 @@ run.bat 127.0.0.1:8000
 
 - 动态分析需要下载Genymotion或Android studio等模拟器，Genymotion或Android studio下载配置好，创建虚拟机后会自动连接到系统
 - 注意：请先启动模拟器再运行
-- 点击中心“安卓动态分析”按钮，连接模拟器，此时如果报错可能是模拟器未能正常建立连接，可能因网络代理问题，请检查。
+- 点击中心“安卓动态分析”按钮，连接模拟器，此时如果报错可能是模拟器未能正常建立连接。
+
+**注意：如果模拟器无法正常连接，请遵循以下步骤**
+1. 请下载  [Android Studio Emulator](https://developer.android.com/studio) 模拟器
+2. 创建**Android 9.0、API 28、非Google Play**的AVD
+3. 
+
 
 页面中出现简单静态分析扫描过的apk，可选择将其下载的模拟器中运行，然后选择对何种行为进行动态分析
 
@@ -81,7 +87,8 @@ run.bat 127.0.0.1:8000
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5Mzg3MzE4MSwtODU3NTAxNTgzLC0xNj
-gyOTk5NjMzLC02MDE0NzgyNDYsMTcxNTMxODEwNCwxMDA4NTI3
-NDgwLC0xMjE4MTgxMzEwLDMzMDQzMjA0Nl19
+eyJoaXN0b3J5IjpbLTE5MzM2NTE5ODUsLTEwMTQxOTE2NTYsMT
+k5Mzg3MzE4MSwtODU3NTAxNTgzLC0xNjgyOTk5NjMzLC02MDE0
+NzgyNDYsMTcxNTMxODEwNCwxMDA4NTI3NDgwLC0xMjE4MTgxMz
+EwLDMzMDQzMjA0Nl19
 -->
