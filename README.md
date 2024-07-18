@@ -73,7 +73,8 @@ run.bat 127.0.0.1:8000
 
 **7. 动态分析**
 
-- 动态分析需要下载Android studio或Genymotion等模拟器，Android studio或Genymotion下载配置好，创建虚拟机后会自动连接到系统，
+- 动态分析需要下载Android studio或Genymotion等模拟器，Android studio或Genymotion下载配置好，创建虚拟机后会自动连接到系统。
+- 
 - 注意：请先启动模拟器再运行
 - 点击中心“安卓动态分析”按钮，连接模拟器，此时如果报错可能是模拟器未能正常建立连接。
 ![动态分析](https://raw.githubusercontent.com/hismj/Moss/master/docs_Images/dynamicscreen.png)
@@ -111,10 +112,10 @@ $ emulator -avd <your_avd_name> -writable-system -no-snapshot
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjgzNTEyMTEsMTExODUzMjI1NiwxMz
-IyNjQzNTEwLDE0MjEyNTQ5NjMsLTQ2NzIzMjI1LDE5MjQyNzI2
-NTEsLTE5MzM2NTE5ODUsLTEwMTQxOTE2NTYsMTk5Mzg3MzE4MS
-wtODU3NTAxNTgzLC0xNjgyOTk5NjMzLC02MDE0NzgyNDYsMTcx
-NTMxODEwNCwxMDA4NTI3NDgwLC0xMjE4MTgxMzEwLDMzMDQzMj
-A0Nl19
+eyJoaXN0b3J5IjpbMjU5ODkyOTEyLDExMTg1MzIyNTYsMTMyMj
+Y0MzUxMCwxNDIxMjU0OTYzLC00NjcyMzIyNSwxOTI0MjcyNjUx
+LC0xOTMzNjUxOTg1LC0xMDE0MTkxNjU2LDE5OTM4NzMxODEsLT
+g1NzUwMTU4MywtMTY4Mjk5OTYzMywtNjAxNDc4MjQ2LDE3MTUz
+MTgxMDQsMTAwODUyNzQ4MCwtMTIxODE4MTMxMCwzMzA0MzIwND
+ZdfQ==
 -->
