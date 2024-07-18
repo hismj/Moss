@@ -13,7 +13,7 @@ Github链接：[hismj/Moss at master (github.com)](https://github.com/hismj/Moss
  - 安装 JDK 8+（必要）
  - 安装 Microsoft Visual C++ Build Tools（必要）
  - 安装 OpenSSL（non-light）（必要）
- - 安装Genymotion或Android studio等模拟器，用于运行动态分析（必要）
+ - 安装Genymotion或Android studio（tui'jian）等模拟器，用于运行动态分析（必要）
  - 安装 wkhtmltopdf，并将包含 wkhtmltopdf 的二进制文件路径添加到环境变量 PATH 里（非必要）
  - keras==2.15.0
  - tensorflow==2.15.0
@@ -111,9 +111,10 @@ $ emulator -avd <your_avd_name> -writable-system -no-snapshot
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExODUzMjI1NiwxMzIyNjQzNTEwLDE0Mj
-EyNTQ5NjMsLTQ2NzIzMjI1LDE5MjQyNzI2NTEsLTE5MzM2NTE5
-ODUsLTEwMTQxOTE2NTYsMTk5Mzg3MzE4MSwtODU3NTAxNTgzLC
-0xNjgyOTk5NjMzLC02MDE0NzgyNDYsMTcxNTMxODEwNCwxMDA4
-NTI3NDgwLC0xMjE4MTgxMzEwLDMzMDQzMjA0Nl19
+eyJoaXN0b3J5IjpbMjU2NjQ2ODM4LDExMTg1MzIyNTYsMTMyMj
+Y0MzUxMCwxNDIxMjU0OTYzLC00NjcyMzIyNSwxOTI0MjcyNjUx
+LC0xOTMzNjUxOTg1LC0xMDE0MTkxNjU2LDE5OTM4NzMxODEsLT
+g1NzUwMTU4MywtMTY4Mjk5OTYzMywtNjAxNDc4MjQ2LDE3MTUz
+MTgxMDQsMTAwODUyNzQ4MCwtMTIxODE4MTMxMCwzMzA0MzIwND
+ZdfQ==
 -->
