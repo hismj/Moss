@@ -50,6 +50,7 @@ run.bat 127.0.0.1:8000
 点击注册可以创建新账户
 输入相关信息即可
 
+
 **5. AI分析**
 
 - 点击home页面顶部菜单栏中的AI分析即可进入AI分析界面
@@ -103,7 +104,7 @@ $ emulator -avd <your_avd_name> -writable-system -no-snapshot
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NTMxODE0OSwtNDY3MjMyMjUsMTkyND
+eyJoaXN0b3J5IjpbMTQyMTI1NDk2MywtNDY3MjMyMjUsMTkyND
 I3MjY1MSwtMTkzMzY1MTk4NSwtMTAxNDE5MTY1NiwxOTkzODcz
 MTgxLC04NTc1MDE1ODMsLTE2ODI5OTk2MzMsLTYwMTQ3ODI0Ni
 wxNzE1MzE4MTA0LDEwMDg1Mjc0ODAsLTEyMTgxODEzMTAsMzMw
