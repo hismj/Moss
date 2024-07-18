@@ -89,7 +89,7 @@ $ emulator -list-avds
 $ emulator -avd <your_avd_name> -writable-system -no-snapshot
 ```
 将<your_avd_name>替换为4.步列出的可用的 Android 虚拟设备 （AVD）名称
-- 若无法联网，请尝试配置
+- 若无法联网，请尝试配置网络，参考[Android Studio模拟器无法连接网络_android studio模拟器无法联网-CSDN博客](https://blog.csdn.net/qq_51802315/article/details/124852026?ops_request_misc=&request_id=&biz_id=102&utm_term=Android%20StudioAVD%E6%A8%A1%E6%8B%9F%E5%99%A8%E9%85%8D%E7%BD%AE%E7%BD%91%E7%BB%9C&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-124852026.142^v100^pc_search_result_base4&spm=1018.2226.3001.4449)
 - 页面中出现简单静态分析扫描过的apk，可选择将其下载的模拟器中运行，然后选择对何种行为进行动态分析
 
 本项目参考MobSF移动安全测试框架：
@@ -100,8 +100,8 @@ $ emulator -avd <your_avd_name> -writable-system -no-snapshot
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNDI3MjY1MSwtMTkzMzY1MTk4NSwtMT
-AxNDE5MTY1NiwxOTkzODczMTgxLC04NTc1MDE1ODMsLTE2ODI5
-OTk2MzMsLTYwMTQ3ODI0NiwxNzE1MzE4MTA0LDEwMDg1Mjc0OD
-AsLTEyMTgxODEzMTAsMzMwNDMyMDQ2XX0=
+eyJoaXN0b3J5IjpbLTQ2NzIzMjI1LDE5MjQyNzI2NTEsLTE5Mz
+M2NTE5ODUsLTEwMTQxOTE2NTYsMTk5Mzg3MzE4MSwtODU3NTAx
+NTgzLC0xNjgyOTk5NjMzLC02MDE0NzgyNDYsMTcxNTMxODEwNC
+wxMDA4NTI3NDgwLC0xMjE4MTgxMzEwLDMzMDQzMjA0Nl19
 -->
