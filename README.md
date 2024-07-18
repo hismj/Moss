@@ -28,7 +28,7 @@ Github链接：[hismj/Moss at master (github.com)](https://github.com/hismj/Moss
 ```
 git clone https://github.com/hismj/Moss.git
 ```
-在项目根目录下安装并初始化
+在项目根目录下安装并初始化，进入命令行输入以下指令
 ```
 setup.bat
 ```
@@ -38,7 +38,7 @@ setup.bat
 ```
 run.bat 127.0.0.1:8000
 ```
-在浏览器上进入
+在浏览器上进入Web端
 ```
 127.0.0.1:8000
 ```
@@ -108,9 +108,9 @@ $ emulator -avd <your_avd_name> -writable-system -no-snapshot
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzIyNzAzNDQsMTQyMTI1NDk2MywtND
-Y3MjMyMjUsMTkyNDI3MjY1MSwtMTkzMzY1MTk4NSwtMTAxNDE5
-MTY1NiwxOTkzODczMTgxLC04NTc1MDE1ODMsLTE2ODI5OTk2Mz
-MsLTYwMTQ3ODI0NiwxNzE1MzE4MTA0LDEwMDg1Mjc0ODAsLTEy
-MTgxODEzMTAsMzMwNDMyMDQ2XX0=
+eyJoaXN0b3J5IjpbMjMzMTc0MDMxLDE0MjEyNTQ5NjMsLTQ2Nz
+IzMjI1LDE5MjQyNzI2NTEsLTE5MzM2NTE5ODUsLTEwMTQxOTE2
+NTYsMTk5Mzg3MzE4MSwtODU3NTAxNTgzLC0xNjgyOTk5NjMzLC
+02MDE0NzgyNDYsMTcxNTMxODEwNCwxMDA4NTI3NDgwLC0xMjE4
+MTgxMzEwLDMzMDQzMjA0Nl19
 -->
