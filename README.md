@@ -49,16 +49,16 @@ run.bat 127.0.0.1:8000
 密码moss
 点击注册可以创建新账户
 输入相关信息即可
-![输入图片说明](https://raw.githubusercontent.com/hismj/Moss/master/docs_Images/loginscreen.png)
+![登录页面](https://raw.githubusercontent.com/hismj/Moss/master/docs_Images/loginscreen.png)
 
-**5. AI分析**
+**5. AI识别**
 
 - 点击home页面顶部菜单栏中的AI分析即可进入AI分析界面
 - 点击“选择APK文件”可以选择一个或多个文件上传（不选择会提示错误）
 - 点击“选择模型”可以选择目前我们已预训练好的两个模型（不选择会提示错误）
 - 在文本框中输入apk下载的url，点击“下载apk”可以从url中下载apk并直接上传
 - 点击“上传二维码图片”可以从二维码中提取url并下载apk上传
-
+![AI识别页面](https://raw.githubusercontent.com/hismj/Moss/master/docs_Images/AIscreen.png)
 
 **6. 简单静态分析**
 
@@ -66,6 +66,7 @@ run.bat 127.0.0.1:8000
 - 可以上传apk文件
 - 上传完毕会自动进入分析页面
 - 可以点击页面顶部菜单栏中的最近检测，查看之前分析过的文件
+
 
 **7. 动态分析**
 
@@ -105,9 +106,9 @@ $ emulator -avd <your_avd_name> -writable-system -no-snapshot
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTA4ODU0NTEsMTQyMTI1NDk2MywtND
-Y3MjMyMjUsMTkyNDI3MjY1MSwtMTkzMzY1MTk4NSwtMTAxNDE5
-MTY1NiwxOTkzODczMTgxLC04NTc1MDE1ODMsLTE2ODI5OTk2Mz
-MsLTYwMTQ3ODI0NiwxNzE1MzE4MTA0LDEwMDg1Mjc0ODAsLTEy
-MTgxODEzMTAsMzMwNDMyMDQ2XX0=
+eyJoaXN0b3J5IjpbNzAyNDgwNjU4LDE0MjEyNTQ5NjMsLTQ2Nz
+IzMjI1LDE5MjQyNzI2NTEsLTE5MzM2NTE5ODUsLTEwMTQxOTE2
+NTYsMTk5Mzg3MzE4MSwtODU3NTAxNTgzLC0xNjgyOTk5NjMzLC
+02MDE0NzgyNDYsMTcxNTMxODEwNCwxMDA4NTI3NDgwLC0xMjE4
+MTgxMzEwLDMzMDQzMjA0Nl19
 -->
