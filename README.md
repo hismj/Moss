@@ -49,7 +49,7 @@ run.bat 127.0.0.1:8000
 密码moss
 点击注册可以创建新账户
 输入相关信息即可
-
+![输入图片说明](https://raw.githubusercontent.com/hismj/Moss/master/docs_Images/loginscreen.png)
 
 **5. AI分析**
 
@@ -104,9 +104,9 @@ $ emulator -avd <your_avd_name> -writable-system -no-snapshot
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMTI1NDk2MywtNDY3MjMyMjUsMTkyND
-I3MjY1MSwtMTkzMzY1MTk4NSwtMTAxNDE5MTY1NiwxOTkzODcz
-MTgxLC04NTc1MDE1ODMsLTE2ODI5OTk2MzMsLTYwMTQ3ODI0Ni
-wxNzE1MzE4MTA0LDEwMDg1Mjc0ODAsLTEyMTgxODEzMTAsMzMw
-NDMyMDQ2XX0=
+eyJoaXN0b3J5IjpbLTEyODg3ODYxMDUsMTQyMTI1NDk2MywtND
+Y3MjMyMjUsMTkyNDI3MjY1MSwtMTkzMzY1MTk4NSwtMTAxNDE5
+MTY1NiwxOTkzODczMTgxLC04NTc1MDE1ODMsLTE2ODI5OTk2Mz
+MsLTYwMTQ3ODI0NiwxNzE1MzE4MTA0LDEwMDg1Mjc0ODAsLTEy
+MTgxODEzMTAsMzMwNDMyMDQ2XX0=
 -->
