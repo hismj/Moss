@@ -73,15 +73,15 @@ run.bat 127.0.0.1:8000
 
 页面中出现简单静态分析扫描过的apk，可选择将其下载的模拟器中运行，然后选择对何种行为进行动态分析
 
-
-
+本项目参考MobSF移动安全测试框架：
+[https://github.com/MobSF/Mobile-Security-Framework-MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF)
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NzUwMTU4MywtMTY4Mjk5OTYzMywtNj
-AxNDc4MjQ2LDE3MTUzMTgxMDQsMTAwODUyNzQ4MCwtMTIxODE4
-MTMxMCwzMzA0MzIwNDZdfQ==
+eyJoaXN0b3J5IjpbMTk5Mzg3MzE4MSwtODU3NTAxNTgzLC0xNj
+gyOTk5NjMzLC02MDE0NzgyNDYsMTcxNTMxODEwNCwxMDA4NTI3
+NDgwLC0xMjE4MTgxMzEwLDMzMDQzMjA0Nl19
 -->
