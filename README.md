@@ -59,6 +59,7 @@ run.bat 127.0.0.1:8000
 - 在文本框中输入apk下载的url，点击“下载apk”可以从url中下载apk并直接上传
 - 点击“上传二维码图片”可以从二维码中提取url并下载apk上传
 
+
 **6. 简单静态分析**
 
 - 点击页面顶部菜单栏中的简单静态分析即可进入简单静态分析界面，也就是最初页面
@@ -104,7 +105,7 @@ $ emulator -avd <your_avd_name> -writable-system -no-snapshot
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODg3ODYxMDUsMTQyMTI1NDk2MywtND
+eyJoaXN0b3J5IjpbLTE2MTA4ODU0NTEsMTQyMTI1NDk2MywtND
 Y3MjMyMjUsMTkyNDI3MjY1MSwtMTkzMzY1MTk4NSwtMTAxNDE5
 MTY1NiwxOTkzODczMTgxLC04NTc1MDE1ODMsLTE2ODI5OTk2Mz
 MsLTYwMTQ3ODI0NiwxNzE1MzE4MTA0LDEwMDg1Mjc0ODAsLTEy
