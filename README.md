@@ -74,14 +74,13 @@ run.bat 127.0.0.1:8000
 **注意：如果模拟器无法正常连接，请遵循以下步骤**
 1. 请下载  [Android Studio Emulator](https://developer.android.com/studio) 模拟器
 2. 创建**Android 9.0、API 28、非Google Play**的AVD
-3. 使用emulator从命令行运行 AVD
+3. **使用emulator从命令行运行 AVD**
 将 Android SDK 模拟器目录追加到环境变量`PATH`。
-
 一些示例位置
-
-苹果电脑 -/Users/<user>/Library/Android/sdk/emulator
-Linux的 -/home/<user>/Android/Sdk/emulator
-窗户-C:\Users\<user>\AppData\Local\Android\Sdk\emulator
+苹果电脑 `/Users/<user>/Library/Android/sdk/emulator`
+Linux `/home/<user>/Android/Sdk/emulator`
+Windows `C:\Users\<user>\AppData\Local\Android\Sdk\emulator`
+4. **列出可用的 Android 虚拟设备 （AVD）**
 
 
 页面中出现简单静态分析扫描过的apk，可选择将其下载的模拟器中运行，然后选择对何种行为进行动态分析
@@ -94,8 +93,8 @@ Linux的 -/home/<user>/Android/Sdk/emulator
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTMwMjM5MjIsLTE5MzM2NTE5ODUsLT
-EwMTQxOTE2NTYsMTk5Mzg3MzE4MSwtODU3NTAxNTgzLC0xNjgy
-OTk5NjMzLC02MDE0NzgyNDYsMTcxNTMxODEwNCwxMDA4NTI3ND
-gwLC0xMjE4MTgxMzEwLDMzMDQzMjA0Nl19
+eyJoaXN0b3J5IjpbNjM3MzE4MDA5LC0xOTMzNjUxOTg1LC0xMD
+E0MTkxNjU2LDE5OTM4NzMxODEsLTg1NzUwMTU4MywtMTY4Mjk5
+OTYzMywtNjAxNDc4MjQ2LDE3MTUzMTgxMDQsMTAwODUyNzQ4MC
+wtMTIxODE4MTMxMCwzMzA0MzIwNDZdfQ==
 -->
