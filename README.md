@@ -28,7 +28,7 @@ Github链接：[hismj/Moss at master (github.com)](https://github.com/hismj/Moss
 ```
 git clone https://github.com/hismj/Moss.git
 ```
-安装并初始化
+在项目根目录下安装并初始化
 ```
 setup.bat
 ```
@@ -76,10 +76,13 @@ run.bat 127.0.0.1:8000
 2. 创建**Android 9.0、API 28、非Google Play**的AVD
 3. **使用emulator从命令行运行 AVD**
 将 Android SDK 模拟器目录追加到环境变量`PATH`。
-一些示例位置
-苹果电脑 `/Users/<user>/Library/Android/sdk/emulator`
-Linux `/home/<user>/Android/Sdk/emulator`
-Windows `C:\Users\<user>\AppData\Local\Android\Sdk\emulator`
+一些示例位置：
+Mac
+ `/Users/<user>/Library/Android/sdk/emulator`
+Linux
+ `/home/<user>/Android/Sdk/emulator`
+Windows
+ `C:\Users\<user>\AppData\Local\Android\Sdk\emulator`
 4. **列出可用的 Android 虚拟设备 （AVD）名称**
 ```
 $ emulator -list-avds
@@ -100,8 +103,9 @@ $ emulator -avd <your_avd_name> -writable-system -no-snapshot
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NzIzMjI1LDE5MjQyNzI2NTEsLTE5Mz
-M2NTE5ODUsLTEwMTQxOTE2NTYsMTk5Mzg3MzE4MSwtODU3NTAx
-NTgzLC0xNjgyOTk5NjMzLC02MDE0NzgyNDYsMTcxNTMxODEwNC
-wxMDA4NTI3NDgwLC0xMjE4MTgxMzEwLDMzMDQzMjA0Nl19
+eyJoaXN0b3J5IjpbMTI1NTMxODE0OSwtNDY3MjMyMjUsMTkyND
+I3MjY1MSwtMTkzMzY1MTk4NSwtMTAxNDE5MTY1NiwxOTkzODcz
+MTgxLC04NTc1MDE1ODMsLTE2ODI5OTk2MzMsLTYwMTQ3ODI0Ni
+wxNzE1MzE4MTA0LDEwMDg1Mjc0ODAsLTEyMTgxODEzMTAsMzMw
+NDMyMDQ2XX0=
 -->
