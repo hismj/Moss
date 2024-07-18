@@ -72,7 +72,8 @@ run.bat 127.0.0.1:8000
 - 点击中心“安卓动态分析”按钮，连接模拟器，此时如果报错可能是模拟器未能正常建立连接。
 
 **注意：如果模拟器无法正常连接，请遵循以下步骤**
-请使用Android Studio 模拟器
+1. 请下载  [Android Studio Emulator](https://developer.android.com/studio) 模拟器
+2. 
 
 
 页面中出现简单静态分析扫描过的apk，可选择将其下载的模拟器中运行，然后选择对何种行为进行动态分析
@@ -85,8 +86,8 @@ run.bat 127.0.0.1:8000
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjU0MTc5OTUsMTk5Mzg3MzE4MSwtOD
-U3NTAxNTgzLC0xNjgyOTk5NjMzLC02MDE0NzgyNDYsMTcxNTMx
-ODEwNCwxMDA4NTI3NDgwLC0xMjE4MTgxMzEwLDMzMDQzMjA0Nl
-19
+eyJoaXN0b3J5IjpbLTc5NDYyNTUwOSwxOTkzODczMTgxLC04NT
+c1MDE1ODMsLTE2ODI5OTk2MzMsLTYwMTQ3ODI0NiwxNzE1MzE4
+MTA0LDEwMDg1Mjc0ODAsLTEyMTgxODEzMTAsMzMwNDMyMDQ2XX
+0=
 -->
