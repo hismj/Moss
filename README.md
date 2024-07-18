@@ -38,17 +38,18 @@ setup.bat
 ```
 run.bat 127.0.0.1:8000
 ```
-在浏览器上进入Web端
+进入浏览器，输入以下IP和端口，进入Web端
 ```
 127.0.0.1:8000
 ```
 **4. 登录注册**
 
-管理员账户
+- 管理员账户
+```
 用户名moss
 密码moss
-点击注册可以创建新账户
-输入相关信息即可
+```
+- 点击注册可以创建新账户，输入相关信息即可
 ![登录页面](https://raw.githubusercontent.com/hismj/Moss/master/docs_Images/loginscreen.png)
 
 **5. AI识别**
@@ -108,9 +109,9 @@ $ emulator -avd <your_avd_name> -writable-system -no-snapshot
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMzMTc0MDMxLDE0MjEyNTQ5NjMsLTQ2Nz
-IzMjI1LDE5MjQyNzI2NTEsLTE5MzM2NTE5ODUsLTEwMTQxOTE2
-NTYsMTk5Mzg3MzE4MSwtODU3NTAxNTgzLC0xNjgyOTk5NjMzLC
-02MDE0NzgyNDYsMTcxNTMxODEwNCwxMDA4NTI3NDgwLC0xMjE4
-MTgxMzEwLDMzMDQzMjA0Nl19
+eyJoaXN0b3J5IjpbMTMyMjY0MzUxMCwxNDIxMjU0OTYzLC00Nj
+cyMzIyNSwxOTI0MjcyNjUxLC0xOTMzNjUxOTg1LC0xMDE0MTkx
+NjU2LDE5OTM4NzMxODEsLTg1NzUwMTU4MywtMTY4Mjk5OTYzMy
+wtNjAxNDc4MjQ2LDE3MTUzMTgxMDQsMTAwODUyNzQ4MCwtMTIx
+ODE4MTMxMCwzMzA0MzIwNDZdfQ==
 -->
